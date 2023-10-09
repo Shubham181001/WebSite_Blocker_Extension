@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Website Popup Blocker",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "block.png",
+        "48": "block.png",
+        "128": "block.png"
+      }
+    },
+    "icons": {
+      "16": "block.png",
+      "48": "block.png",
+      "128": "block.png"
+    }
+  }
+  
